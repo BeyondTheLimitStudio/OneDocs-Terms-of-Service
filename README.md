@@ -1,1 +1,0 @@
-# PocketDoc-Terms-of-Service

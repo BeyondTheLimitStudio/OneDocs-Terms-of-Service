@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - PocketDoc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+            --secondary-gradient: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%);
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+            --text-muted: #64748b;
+            --accent-color: #0ea5e9;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            background-image:
+                radial-gradient(at 0% 0%, hsla(210, 80%, 96%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 100%, hsla(220, 80%, 96%, 1) 0, transparent 50%);
+            color: var(--text-color);
+            line-height: 1.8;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.05);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: rgba(14, 165, 233, 0.1);
+            padding: 0.25rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            color: var(--accent-color);
+            margin-top: 0.5rem;
+            border: 1px solid rgba(14, 165, 233, 0.2);
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #0f172a;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 24px;
+            background: var(--primary-gradient);
+            margin-right: 12px;
+            border-radius: 4px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: #334155;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 1.2rem;
+        }
+
+        ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border-bottom: 1px dashed transparent;
+            font-weight: 600;
+        }
+
+        a:hover {
+            color: #0284c7;
+            border-bottom-color: #0284c7;
+        }
+
+        .highlight-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box p {
+            color: #78350f;
+            margin: 0;
+        }
+
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .email-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.5rem 1.5rem;
+            background: var(--primary-gradient);
+            color: white;
+            border-radius: 50px;
+            font-weight: 600;
+            border: none;
+        }
+
+        .email-link:hover {
+            opacity: 0.9;
+            color: white;
+            border: none;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -10px rgba(37, 99, 235, 0.4);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Terms of Service</h1>
+            <br>
+            <span class="app-badge">PocketDoc</span>
+        </header>
+
+        <p>Welcome to PocketDoc. These Terms of Service ("Terms") govern your use of the PocketDoc mobile application
+            ("App", "Service") provided by Beyond The Limit Studio ("we", "us", "our").</p>
+
+        <p>By downloading, installing, or using PocketDoc, you agree to be bound by these Terms. If you do not agree to
+            these Terms, please do not use our Service.</p>
+
+        <h2>1. Acceptance of Terms</h2>
+        <p>By accessing and using PocketDoc, you accept and agree to be bound by the terms and provision of this
+            agreement. These Terms apply to all users of the App.</p>
+
+        <h2>2. License Grant</h2>
+        <p>Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable,
+            revocable license to download, install, and use PocketDoc on your personal mobile device solely for your
+            personal, non-commercial use.</p>
+
+        <h3>You May:</h3>
+        <ul>
+            <li>Use the App for creating, editing, and managing PDF documents</li>
+            <li>Scan documents using your device camera</li>
+            <li>Convert images to PDF format</li>
+            <li>Merge, split, compress, and password-protect PDF files</li>
+            <li>Store documents locally on your device</li>
+        </ul>
+
+        <h3>You May Not:</h3>
+        <ul>
+            <li>Modify, reverse engineer, decompile, or disassemble the App</li>
+            <li>Remove or alter any copyright, trademark, or proprietary notices</li>
+            <li>Use the App for any illegal or unauthorized purpose</li>
+            <li>Distribute, sell, lease, or sublicense the App</li>
+            <li>Use the App to create content that violates any laws or third-party rights</li>
+            <li>Attempt to gain unauthorized access to any portion of the App</li>
+        </ul>
+
+        <h2>3. User Responsibilities</h2>
+        <p>You are responsible for:</p>
+        <ul>
+            <li>Maintaining the confidentiality of any documents you create or process</li>
+            <li>Ensuring you have the right to scan, convert, or modify any documents</li>
+            <li>Complying with all applicable laws and regulations</li>
+            <li>Any content you create, store, or share using the App</li>
+            <li>Maintaining adequate backups of your important documents</li>
+        </ul>
+
+        <h2>4. Intellectual Property</h2>
+        <p>PocketDoc and all related content, features, and functionality are owned by Beyond The Limit Studio and are
+            protected by international copyright, trademark, and other intellectual property laws.</p>
+
+        <p>Your documents and files remain your property. We do not claim any ownership rights to the content you create
+            or process using the App.</p>
+
+        <h2>5. Privacy</h2>
+        <p>Your use of PocketDoc is also governed by our Privacy Policy. Please review our <a
+                href="privacy_policy.html">Privacy Policy</a> to understand how we collect, use, and protect your
+            information.</p>
+
+        <h2>6. Third-Party Services</h2>
+        <p>PocketDoc integrates third-party services including:</p>
+        <ul>
+            <li><strong>Google AdMob:</strong> For displaying advertisements</li>
+            <li><strong>Firebase Analytics:</strong> For app analytics and performance monitoring</li>
+        </ul>
+        <p>Your use of these third-party services is subject to their respective terms and conditions.</p>
+
+        <h2>7. Advertisements</h2>
+        <p>PocketDoc is an ad-supported application. By using the App, you agree that we may display advertisements. We
+            use Google AdMob to serve ads, which may be personalized based on your interests and usage patterns.</p>
+
+        <h2>8. Disclaimer of Warranties</h2>
+        <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+            INCLUDING BUT NOT LIMITED TO:</p>
+        <ul>
+            <li>Warranties of merchantability, fitness for a particular purpose, or non-infringement</li>
+            <li>That the App will be uninterrupted, secure, or error-free</li>
+            <li>That defects will be corrected</li>
+            <li>That the App is free of viruses or harmful components</li>
+        </ul>
+
+        <div class="highlight-box">
+            <p><strong>Important:</strong> We do not guarantee the accuracy, completeness, or quality of documents
+                created using the App. Always verify important documents before use.</p>
+        </div>
+
+        <h2>9. Limitation of Liability</h2>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, BEYOND THE LIMIT STUDIO SHALL NOT BE LIABLE FOR:</p>
+        <ul>
+            <li>Any indirect, incidental, special, consequential, or punitive damages</li>
+            <li>Loss of data, documents, or files</li>
+            <li>Loss of profits, revenue, or business opportunities</li>
+            <li>Any damages arising from your use or inability to use the App</li>
+        </ul>
+        <p>Our total liability shall not exceed the amount you paid for the App (which is zero for the free version).
+        </p>
+
+        <h2>10. Indemnification</h2>
+        <p>You agree to indemnify, defend, and hold harmless Beyond The Limit Studio from any claims, damages, losses,
+            liabilities, and expenses (including legal fees) arising from:</p>
+        <ul>
+            <li>Your use of the App</li>
+            <li>Your violation of these Terms</li>
+            <li>Your violation of any rights of another party</li>
+            <li>Content you create or process using the App</li>
+        </ul>
+
+        <h2>11. Updates and Modifications</h2>
+        <p>We reserve the right to:</p>
+        <ul>
+            <li>Modify, suspend, or discontinue the App at any time</li>
+            <li>Update these Terms at any time</li>
+            <li>Release updates, patches, or new versions of the App</li>
+        </ul>
+        <p>Continued use of the App after changes constitutes acceptance of the modified Terms.</p>
+
+        <h2>12. Termination</h2>
+        <p>We may terminate or suspend your access to the App immediately, without prior notice, for any reason,
+            including if you breach these Terms.</p>
+        <p>You may terminate your use of the App at any time by uninstalling it from your device.</p>
+        <p>Upon termination, all licenses granted to you will immediately cease.</p>
+
+        <h2>13. Geographic Restrictions</h2>
+        <p>PocketDoc is intended for use worldwide. However, we make no representation that the App is appropriate or
+            available for use in all locations. Access to the App may not be legal in certain jurisdictions.</p>
+
+        <h2>14. Governing Law</h2>
+        <p>These Terms shall be governed by and construed in accordance with the laws of your jurisdiction, without
+            regard to its conflict of law provisions.</p>
+
+        <h2>15. Dispute Resolution</h2>
+        <p>Any disputes arising from these Terms or your use of the App shall be resolved through good faith
+            negotiations. If negotiations fail, disputes may be resolved through binding arbitration or small claims
+            court.</p>
+
+        <h2>16. Severability</h2>
+        <p>If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or
+            eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and
+            effect.</p>
+
+        <h2>17. Entire Agreement</h2>
+        <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and Beyond The
+            Limit Studio regarding the use of PocketDoc.</p>
+
+        <h2>18. Contact Information</h2>
+        <p>If you have any questions about these Terms, please contact us:</p>
+        <p><strong>Email:</strong> help.beyondthelimitstudio@gmail.com</p>
+        <p><strong>Developer:</strong> Beyond The Limit Studio</p>
+
+        <footer>
+            <p><strong>Last Updated:</strong> January 10, 2026</p>
+            <p><strong>Effective Date:</strong> January 10, 2026</p>
+            <br>
+            <a href="mailto:help.beyondthelimitstudio@gmail.com" class="email-link">Contact Support</a>
+            <br><br>
+            <p>&copy; 2026 Beyond The Limit Studio. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
